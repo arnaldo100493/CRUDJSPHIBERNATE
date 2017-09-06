@@ -44,7 +44,7 @@ public class ServletRead extends HttpServlet {
         if (request.getMethod().equals("GET")) {
             this.ejbTPersona = new EJBTPersona();
 
-            boolean valorRetornado = false;
+            boolean valorRetornado;
 
             valorRetornado = this.ejbTPersona.getAll();
 
